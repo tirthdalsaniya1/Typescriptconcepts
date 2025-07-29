@@ -16,4 +16,11 @@ export type UserType = {
 | Can describe primitive/unions     | ❌ No        | ✅ Yes            | Only `type` can define things like \`type Status = 'PASS'                 | 
 | Can describe functions            | ❌ Limited   | ✅ Yes            | `type` is better for defining function shapes like `(x: number) => void`. |  
 
+
+                        Differences: interface vs type
+Feature	                    interface	                         type
+Extends other interfaces?	✅ Yes	                           ✅ Yes (with &)
+Can define union types?	    ❌ No	                           ✅ Yes (`A
+Can be merged?	            ✅ Yes (declaration merging)	       ❌ No
+Recommended for	            Object shapes, class contracts	     Union/tuple/primitive combinations
 */

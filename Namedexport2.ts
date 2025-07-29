@@ -9,3 +9,16 @@ export function hi() {
 
     console.log('hi from Namedexport2 class');
 }
+
+
+export const age = 30;
+
+export function greet() {
+    console.log('greeting you from Namedexport2 class');
+}
+export class Person {
+
+    constructor() {
+        console.log('person class const');
+    }
+}

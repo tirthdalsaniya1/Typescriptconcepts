@@ -1,3 +1,7 @@
+/*
+Use functions for behavior, interfaces for structure, and classes for objects that need state or lifecycle.
+*/
+
 function add() {
     let a = 10, b = 20;
     console.log('sum of a and b is', a + b);
@@ -24,6 +28,7 @@ TypeScript supports overload signatures,
 but the actual function must handle the logic for all cases because 
 JavaScript (the runtime) does not support overloading.
 */
+
 // declaration is optional
 function greet(name: string, age: number): string;
 function greet(name: string): string;
