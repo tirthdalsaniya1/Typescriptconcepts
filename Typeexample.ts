@@ -8,11 +8,12 @@ export type UserType = {
 };
 
 /*
-| Feature                        | `interface`  | `type`         |
-| ------------------------------ | -----------  | -------------  |
-| Can describe object structure  | ✅ Yes       | ✅ Yes        |
-| Can extend another             | ✅ Yes       | ✅ (with `&`) |
-| Can be merged (reopened)       | ✅ Yes       | ❌ No         |
-| Can describe primitives/unions | ❌ No        | ✅ Yes        |
-| Can describe functions         | ❌ Limited   | ✅ Yes        |
+| Feature                           | `interface` | `type`              | Easy Explanation                                                          |  
+| --------------------------------- | ----------- | ----------------    | ------------------------------------------------------------------------- |
+| Can describe object shape         | ✅ Yes       | ✅ Yes            | Both can define object structure like `{ name: string, age: number }`.    |
+| Can extend (inherit from another) | ✅ Yes       | ✅ Yes (with `&`) | You can reuse and add properties from other interfaces or types.          |
+| Can be merged (reopened)          | ✅ Yes       | ❌ No             | Interfaces can be declared multiple times and auto-merged. Types can't.   |
+| Can describe primitive/unions     | ❌ No        | ✅ Yes            | Only `type` can define things like \`type Status = 'PASS'                 | 
+| Can describe functions            | ❌ Limited   | ✅ Yes            | `type` is better for defining function shapes like `(x: number) => void`. |  
+
 */
